@@ -16,9 +16,9 @@ spring:
         - id: first-service
           uri: http://localhost:8081/
           predicates:
-            - Path=/first-servcie/**
+            - Path=/first-service/**
         - id: second-service
           uri: http://localhost:8082/
           predicates:
-            - Path=/second-servcie/**
+            - Path=/second-service/**
 
