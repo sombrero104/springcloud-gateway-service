@@ -5,14 +5,14 @@ import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+// @Configuration
 public class FilterConfig {
 
     /**
      * application.yml 파일에서 설정했었던 라우트 정보인
      * spring.cloud.gateway.routes 설정을 아래와 같이 자바 코드로 설정 가능.
      */
-    @Bean
+    // @Bean
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/first-service/**")
