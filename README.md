@@ -56,8 +56,8 @@ public class FilterConfig {
     }
 }
 ~~~ 
-
-<img src="./images/request_header.png" width="90%" /><br/>
-<img src="./images/response_header.png" width="90%" /><br/>
+http://localhost:8000/first-service/message를 호출하면 아래와 같이 출력되는 것을 확인할 수 있다. <br/>
+<img src="./images/request_header.png" width="40%" /><br/>
+<img src="./images/response_header.png" width="40%" /><br/>
 
 <br/><br/><br/><br/>
