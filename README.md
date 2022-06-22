@@ -35,7 +35,8 @@ spring:
 ~~~
 <br/>
 
-## 필터 추가 
+## Spring Cloud Gateway 필터 추가 
+### 방법 1. 라우트 정보를 추가한 RouteLocator 빈 등록
 application.yml 파일에서 설정했었던 라우트 정보인 <br/>
 spring.cloud.gateway.routes 설정을 아래와 같이 자바 코드로 설정 가능하다. <br/>
 ~~~
@@ -62,5 +63,31 @@ http://localhost:8000/first-service/message 로 요청을 보내면 아래와 �
 
 <img src="./images/request_header.png" width="35%" /><br/>
 <img src="./images/response_header.png" width="40%" /><br/>
+<br/>
+
+### 방법 2. application.yml에서 추가 
+~~~
+...
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: first-service
+          uri: http://localhost:8081/   # 이동될 주소
+          predicates:
+            - Path=/first-service/**    # 로 요청이 들어오면
+          filters:
+            - AddRequestHeader=first-request, first-request-header2     # 요청 헤더에 first-request를 추가한다.
+            - AddResponseHeader=first-response, first-response-header2  # 응답 헤더에 first-response를 추가한다.
+        - id: second-service
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/second-service/**
+          filters:
+            - AddRequestHeader=second-request, second-request-header2
+            - AddResponseHeader=second-response, second-response-header2
+~~~
 
 <br/><br/><br/><br/>
