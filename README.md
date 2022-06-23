@@ -103,7 +103,7 @@ GatewayFilter를 반환하도록 한다. <br/>
 #### => <a href="/src/main/java/me/filter/CustomFilter.java">me.filter.CustomFilter</a> 참조. 
 
 #### [실행 결과] <br/>
-<img src="./images/custom_filter.png" width="45%" /><br/>
+<img src="./images/custom_filter.png" width="42%" /><br/>
 
 ### (2) 모든 서비스에 적용하는 방법
 #### => <a href="/src/main/java/me/filter/GlobalFilter.java">me.filter.GlobalFilter</a> 참조. 
