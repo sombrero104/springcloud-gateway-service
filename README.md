@@ -115,4 +115,11 @@ GatewayFilter를 반환하도록 한다. <br/>
 <img src="./images/global_filter_result.png" width="51%" /><br/>
 <br/>
 
+## Spring Cloud Gateway & Eureka 연동 
+http://127.0.0.1:8000/first-service/welcome 요청 <br/>
+-> API Gateway 가 물어봄. -> Eureka Server(Service Discovery) <br/>
+(어디에 마이크로서비스가 있는지 위치 정보를 전달 받음.) <br/>
+-> API Gateway 가 포워딩함. -> http://127.0.0.1:8081/first-service/welcome <br/>
+<br/>
+
 <br/><br/><br/><br/>
