@@ -61,6 +61,7 @@ public class FilterConfig {
 
 http://localhost:8000/first-service/message 로 요청을 보내면 아래와 같이 출력되는 것을 확인할 수 있다. <br/>
 
+#### [실행 결과] <br/>
 <img src="./images/request_header.png" width="35%" /><br/>
 <img src="./images/response_header.png" width="40%" /><br/>
 <br/>
@@ -96,7 +97,7 @@ AbstractGatewayFilterFactory를 상속 받아서 <br/>
 apply(Config config) 메소드를 오버라이딩하여 커스텀하게 설정한 GatewayFilter를 반환하도록 한다. <br/>
 => me.filter.CustomFilter 참조. 
 
-[실행 결과] <br/>
+#### [실행 결과] <br/>
 <img src="./images/response_header.png" width="40%" /><br/>
 
 <br/>
