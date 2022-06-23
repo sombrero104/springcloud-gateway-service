@@ -108,11 +108,11 @@ GatewayFilter를 반환하도록 한다. <br/>
 ### (2) 모든 서비스에 적용하는 방법
 모든 필터들 중 가장 첫번째, 마지막으로 실행된다. <br/>
 #### [application.yml] 
-<img src="./images/global_filter_config.png" width="60%" /><br/>
+<img src="./images/global_filter_config.png" width="45%" /><br/>
 #### => <a href="/src/main/java/me/filter/GlobalFilter.java">me.filter.GlobalFilter</a> 참조. 
 
 #### [실행 결과] <br/>
-<img src="./images/global_filter_result.png" width="40%" /><br/>
+<img src="./images/global_filter_result.png" width="50%" /><br/>
 <br/>
 
 <br/><br/><br/><br/>
