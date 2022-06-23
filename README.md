@@ -95,7 +95,7 @@ spring:
 ### 방법 3. AbstractGatewayFilterFactory를 상속 받아서 필터 설정을 추가 
 AbstractGatewayFilterFactory를 상속 받아서 <br/>
 apply(Config config) 메소드를 오버라이딩하여 커스텀하게 설정한 GatewayFilter를 반환하도록 한다. <br/>
-#### => me.filter.CustomFilter 참조. 
+#### => <a href="/src/main/java/me/filter/CustomFilter.java">me.filter.CustomFilter</a> 참조. 
 
 #### [실행 결과] <br/>
 <img src="./images/custom_filter.png" width="45%" /><br/>
