@@ -98,7 +98,7 @@ apply(Config config) 메소드를 오버라이딩하여 커스텀하게 설정�
 => me.filter.CustomFilter 참조. 
 
 #### [실행 결과] <br/>
-<img src="./images/custom_filter.png" width="40%" /><br/>
+<img src="./images/custom_filter.png" width="50%" /><br/>
 
 <br/>
 
