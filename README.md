@@ -98,7 +98,7 @@ apply(Config config) 메소드를 오버라이딩하여 테스트로 로그를 �
 GatewayFilter를 반환하도록 한다. <br/>
 
 ### (1) 특정 서비스에만 적용하는 방법 
-<img src="./images/custom_filter_config.png" width="55%" /><br/>
+<img src="./images/custom_filter_config.png" width="60%" /><br/>
 #### => <a href="/src/main/java/me/filter/CustomFilter.java">me.filter.CustomFilter</a> 참조. 
 
 #### [실행 결과] <br/>
