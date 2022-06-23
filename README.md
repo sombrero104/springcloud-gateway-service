@@ -138,7 +138,7 @@ Gateway 서비스와 포워딩할 서비스들을 실행하면 아래와 같이 
 Gateway 서비스로 요청 시 해당 서비스로 포워딩되는 것을 확인할 수 있다. <br/>
 
 #### [실행 결과] <br/>
-<img src="./images/eureka_lb_status.png" width="69%" /> <br/>
-<img src="./images/eureka_lb_result.png" width="57%" /> <br/>
+<img src="./images/eureka_lb_status.png" width="73%" /> <br/>
+<img src="./images/eureka_lb_result.png" width="55%" /> <br/>
 
 <br/><br/><br/><br/>
