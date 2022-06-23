@@ -113,7 +113,7 @@ GatewayFilter를 반환하도록 한다. <br/>
 
 #### [실행 결과] <br/>
 <img src="./images/global_filter_result.png" width="51%" /><br/>
-<br/>
+<br/><br/>
 
 ## Spring Cloud Gateway & Eureka 연동 
 http://127.0.0.1:8000/first-service/welcome 요청 <br/>
