@@ -14,7 +14,7 @@ spring:
     gateway:
       default-filters:
         - name: GlobalFilter
-          args:
+          args:   # 외부에 설정값을 두고 가져와서 사용하도록 하면 설정값이 바뀔 때마다 이 서비스를 변경 및 재배포하지 않아도 된다.
             baseMessage: Spring Cloud Gateway GlobalFilter
             preLogger: true
             postLogger: true
@@ -34,4 +34,9 @@ spring:
           filters:
 #            - AddRequestHeader=second-request, second-request-header2
 #            - AddResponseHeader=second-response, second-response-header2
-            - CustomFilter
+            - name: CustomFilter
+            - name: LoggingFilter
+              args:
+                baseMessage: Hi, there.
+                preLogger: true
+                postLogger: true
