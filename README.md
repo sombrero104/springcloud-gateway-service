@@ -63,7 +63,7 @@ http://localhost:8000/first-service/message 로 요청을 보내면 아래와 �
 
 #### [실행 결과] <br/>
 <img src="./images/request_header.png" width="32%" /><br/>
-<img src="./images/response_header.png" width="40%" /><br/>
+<img src="./images/response_header.png" width="37%" /><br/>
 <br/>
 
 ### 방법 2. application.yml에서 추가 
