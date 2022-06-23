@@ -122,4 +122,23 @@ http://127.0.0.1:8000/first-service/welcome 요청 <br/>
 -> API Gateway 가 포워딩함. -> http://127.0.0.1:8081/first-service/welcome <br/>
 <br/>
 
+Gateway 서비스에도 아래와 같이 Eureka Client 의존성을 추가한다. <br/>
+~~~
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
+~~~
+
+그리고 아래와 같이 uri 설정에 'lb://[포워딩 할 서비스 이름]'을 등록해 준다. <br/>
+
+<img src="./images/eureka_lb.png" width="47%" /> <br/>
+
+Gateway 서비스와 포워딩할 서비스들을 실행하면 아래와 같이 Eureka 서버에 등록이 되고, <br/>
+Gateway 서비스로 요청 시 해당 서비스로 포워딩되는 것을 확인할 수 있다. <br/>
+
+#### [실행 결과] <br/>
+<img src="./images/eureka_lb_status.png" width="47%" /> <br/>
+<img src="./images/eureka_lb_result.png" width="47%" /> <br/>
+
 <br/><br/><br/><br/>
