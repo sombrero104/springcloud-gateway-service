@@ -112,7 +112,7 @@ GatewayFilter를 반환하도록 한다. <br/>
 #### => <a href="/src/main/java/me/filter/GlobalFilter.java">me.filter.GlobalFilter</a> 참조. 
 
 #### [실행 결과] <br/>
-<img src="./images/global_filter_result.png" width="52%" /><br/>
+<img src="./images/global_filter_result.png" width="51%" /><br/>
 <br/>
 
 <br/><br/><br/><br/>
