@@ -145,15 +145,15 @@ Gateway 서비스로 요청 시 해당 서비스로 포워딩되는 것을 확�
 ### 랜덤 포트 서비스 포트 번호 출력해보기 
 springcloud-first-service를 랜덤 포트로 설정 후 (server.port=0) <br/>
 
-<img src="./images/first_service_random_port_status.png" width="85%" /> <br/>
+<img src="./images/first_service_random_port_status.png" width="95%" /> <br/>
 
 아래와 같이 코드를 추가하면 랜덤으로 지정된 포트 번호를 출력해 볼 수 있다. <br/>
 
-<img src="./images/first_service_print_random_port.png" width="75%" /> <br/>
+<img src="./images/first_service_print_random_port.png" width="65%" /> <br/>
 
 요청을 계속 보내보면 라운드로빈으로 로드밸런싱이 되는 것을 확인할 수 있다. <br/>
 
-<img src="./images/first_service_random_port_1.png" width="65%" /> <br/>
-<img src="./images/first_service_random_port_2.png" width="65%" /> <br/>
+<img src="./images/first_service_random_port_1.png" width="67%" /> <br/>
+<img src="./images/first_service_random_port_2.png" width="67%" /> <br/>
 
 <br/><br/><br/><br/>
