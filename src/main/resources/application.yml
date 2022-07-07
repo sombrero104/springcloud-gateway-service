@@ -28,9 +28,9 @@ spring:
           predicates:
             - Path=/catalog-service/**
         - id: order-service
-            uri: lb://ORDER-SERVICE
-            predicates:
-              - Path=/order-service/**
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/order-service/**
         - id: first-service
           uri: lb://MY-FIRST-SERVICE   # Service Discovery에 등록되어 있는 이름으로 포워딩. # http://localhost:8081/
           predicates:
