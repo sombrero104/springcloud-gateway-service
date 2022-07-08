@@ -155,5 +155,14 @@ springcloud-first-service를 랜덤 포트로 설정 후 (server.port=0) <br/>
 
 <img src="./images/first_service_random_port_1.png" width="68%" /> <br/>
 <img src="./images/first_service_random_port_2.png" width="68%" /> <br/>
+<br/><br/>
+
+## 인가(Authorization) 필터 추가 
+user-service에서 로그인 후 발급 받은 JWT 토큰을 검증하는 필터를 추가한다. <br/>
+=> me.filter.AuthorizationHeaderFilter 참조. <br/>
+
+#### [사용자 조회]
+<img src="./images/first_service_print_random_port.png" width="68%" /> <br/>
+
 
 <br/><br/><br/><br/>
