@@ -162,7 +162,7 @@ user-service에서 로그인 후 발급 받은 JWT 토큰을 검증하는 필터
 => me.filter.AuthorizationHeaderFilter 참조. <br/>
 
 #### [사용자 조회]
-<img src="./images/first_service_print_random_port.png" width="68%" /> <br/>
+<img src="./images/authorization_jwt_token.png" width="68%" /> <br/>
 
 
 <br/><br/><br/><br/>
