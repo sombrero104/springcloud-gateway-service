@@ -163,6 +163,55 @@ user-service에서 로그인 후 발급 받은 JWT 토큰을 검증하는 필터
 
 #### [사용자 조회]
 <img src="./images/authorization_jwt_token.png" width="68%" /> <br/>
+<br/><br/>
 
+## config-service 연동 
+#### [pom.xml]
+~~~
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bootstrap</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+~~~
+#### [bootstrap.yml]
+~~~
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      name: ecommerce
+~~~
+#### [application.yml]
+~~~
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh, info, metrics, prometheus
+~~~
+#### [App.java]
+~~~
+@Bean
+public HttpTraceRepository httpTraceRepository() {
+    return new InMemoryHttpTraceRepository();
+}
+~~~
+#### [실행 결과]
+ecommerce.xml 설정 파일을 수정하고 커밋한 후 <br/>
+http://127.0.0.1:8000/actuator/refresh 를 호출하면 <br/>
+
+<img src="./images/gateway_actuator_refresh_config.png" width="50%" /> <br/>
+
+변경한 내용이 반영되는 것을 확인할 수 있다. <br/>
+
+<img src="./images/gateway_config_debug.png" width="80%" /> <br/>
 
 <br/><br/><br/><br/>
