@@ -82,6 +82,11 @@ spring:
                 baseMessage: Hi, there.
                 preLogger: true
                 postLogger: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 # token:
 #  secret: user_token
